@@ -8,12 +8,22 @@ def clear_pantalla():
 
 
 def insertar_pelicula(num_pelicula,titulo,director,agno,cantidad):
-    PELICULAS [num_pelicula] = {
-        'Titulo' : titulo,
-        'Director' : director,
-        'Anio' : agno,
-        'Cantidad':cantidad
-    }
+    cont = 0
+    for i,v in PELICULAS.items():
+        if i == num_pelicula:
+            cont+=1
+            print("No se puede añadir")
+    if cont> 0:
+        pass
+    else:
+        PELICULAS [num_pelicula] = {
+                        'Titulo' : titulo,
+                        'Director' : director,
+                        'Anio' : agno,
+                        'Cantidad':cantidad
+            }
+
+
 
 
 def mostrar_peliculas():
