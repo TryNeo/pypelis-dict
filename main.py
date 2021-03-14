@@ -13,10 +13,11 @@ def insertar_pelicula(num_pelicula,titulo,director,agno,cantidad):
         if i == num_pelicula:
             cont+=1
             print("No se puede añadir")
+       
     if cont> 0:
-        pass
+        return PELICULAS
     else:
-        PELICULAS [num_pelicula] = {
+         PELICULAS [num_pelicula] = {
                         'Titulo' : titulo,
                         'Director' : director,
                         'Anio' : agno,
